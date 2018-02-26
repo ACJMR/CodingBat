@@ -323,7 +323,9 @@ changeXY("xhixhix") → "yhiyhiy"
       stringClean("Hello") → "Helo"
     */
     public String stringClean(String str) {
-	return "";
+	if (str.length() < 2){return str;}
+	if (str.substring(0,1).equals(str.substring(1,2))){return str.substring(0,1) + stringClean(str.substring(2));}
+	t
     }
 
     /* 25
